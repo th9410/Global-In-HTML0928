@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	상대 경로학습
+		. 상위계층 : ../
+		. 동일계층 : ./ (동일계층은 생략가능)
+		. 하위계층 : /
+		
+		* 나를(현재의 위치) 기준으로 상대적인 위치관계를 지정하는 방법
+		* 활용:	서버(사이트) 내부파일을 지정하는 경우에 일반적으로 사용한다.
+		
+								
+						루트계층		제1계층	     제2계층	            제3계층
+						----------------------------------------
+						index.html
+						aaa ------- A.html (기준)
+						        |
+						        --- A2.html
+						        |
+						        --- bbb ------ B.html
+						                   |
+						                   --- ccc ------ C.html (기준)
+						      
+						ddd ------ D.html (기준)
+
+
+ -->
+ <html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>절대경로로 파일을 호출합니다.</h1>
+	<hr><br><br>
+	<ul>
+		<li><a href="http://127.0.0.1:8080/HTML/ch2/절대경로/aaa/A.html">A파일 열기</a></li>
+		<li><a href="http://localhost:8080/HTML/ch2/절대경로/aaa/bbb/B.html">B파일 열기</li>
+		<li>C파일 열기</li>
+		<li>D파일 열기</li>
+		
+	</ul>
+</body>
+</html>

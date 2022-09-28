@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+	색상지정(RGB)
+		. 16진수 : #FFFFFF
+		. 10진수 : rgb(255,255,255) - css에서 적용해보자,
+		. RGBA : rgba(255,255,255,0,5) - 0: 완전투명, 1: 완전불투명 - css에서 추가학습
+		
+		. FF = 255 :  (16진수는 2진수로 변환 후 4자리씩 끊기, 8진수는 2진수로 변환 후 3자리씩 끊기)
+
+
+	* 기본페이지 작성문법
+		1. 시작태그와 종료태그로 구성되어진다. (대부분)
+			<h1 속성="속성값" > 내부문자(innerHTML) </h1>
+			
+		2. 대소문자 구분이 필요없다.
+		3. 인용부호도 상관없다. 일관성만 지켜라
+			"웹문서" '웹문서'
+		  단, 속성값에 공란이 포함되어 있으면 안되는데 되게 하려면 반드시 인용부호를 써줘야한다.
+		  
+		4. 태그에는 두가지 부류가 있다.
+			1) 블록태그(Block) - 항상 새로운 라인에서 시작한다
+			                 - 기본적인 크기는 왼쪽끝에서 오른쪽끝까지 전체를 블록공간으로 차지한다.
+			                 - 예) <p> <h1> <div> <ul> 등
+			2) 인라인태그(Inline)
+							 - 블록태그 안에 삽입되어서 블록 콘텐츠의 일부를 표현하는데 이용되는 태그이다.
+							 - 예) <span> - 지정된범위, <em> - 강조, <img> - 이미지
+								  <a> - 하이퍼링크, <strong> - 중요문구 등
+		
+		
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="홍길동">
+<meta name="description" content="개발자모집">
+<meta name="keywords" content="java, html, css, js">
+
+<title>배경이미지</title>
+</head>
+<body background="../imge/anya.jpg">
+
+	<h1>글자색과 배경이미지 속성지정</h1>
+	<hr width="500px" size="10px" color="yellow" align="left">
+	
+	<p><font color="white">문서</font>의 기본<span>바탕색</span>은 흰색이고 기본 글자색은 검정색입니다.</p>
+	<!-- font: 글자의 색이나 타입을 변경할 때 사용하는 태그 -->
+	
+
+</body>
+</html>
